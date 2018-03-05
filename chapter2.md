@@ -18,7 +18,11 @@ key: 859b9ea529
 
 
 `@instructions`
+Plot a graph of the two lines below including the region where they intersect.
 
+$y = 5x-2$
+
+$ 5y + 2x = 1$
 
 `@hint`
 
