@@ -15,6 +15,9 @@ skills: 2
 key: c5511f767e
 ```
 
+$\left(\begin{array}{cc} 1 & 0\\ 0 & 1 \end{array}\right)$
+
+
 'Solving' matrices is a basic concept in linear algebra.
 
 Let's take a problem $\mathbf{Ax}=\mathbf{b}$.
