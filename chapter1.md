@@ -55,10 +55,6 @@ $\mathbf{A^{-1}Ax}=\mathbf{x}=\mathbf{A^{-1}b}$
 
 So the solution for $\mathbf{x}$ can be found by taking the inverse of $\mathbf{A}$ and dotting it with $\mathbf{b}$.
 
-`@instructions`
-
-
-`@hint`
 
 
 
@@ -92,6 +88,65 @@ print("Solution:\n", x)
 ```
 `@sct`
 ```{python}
+Ex().check_object('x').has_equal_value()
+success_msg('Great job!')
+```
+
+
+
+
+
+---
+## Using `linalg.solve()`
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: 632f323c4b
+```
+
+Whilst this can be implemented simply in Python, taking the inverse of matrices is computationally expensive and may not be feasible.
+
+A range of methods exist for solving these types of problem - the most standard approach is to use `x = np.linalg.solve(A, b)`. This is much more efficient.
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{}
+import nunmpy as np
+```
+`@sample_code`
+```{}
+# define matrix A using Numpy arrays 
+A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]]) 
+
+#define matrix b 
+b = np.array([4, 5, 6]) 
+
+x = np.linalg.solve( ... , ...)
+
+# linalg.solve is the function of NumPy to solve a system of linear scalar equations 
+print("Solution:\n", x )
+```
+`@solution`
+```{}
+# define matrix A using Numpy arrays 
+A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]]) 
+
+#define matrix b 
+b = np.array([4, 5, 6]) 
+
+# linalg.solve is the function of NumPy to solve a system of linear scalar equations 
+print("Solution:\n", np.linalg.solve(A, b ) )
+```
+`@sct`
+```{}
 Ex().check_object('x').has_equal_value()
 success_msg('Great job!')
 ```
