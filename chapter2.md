@@ -194,6 +194,8 @@ Use this linear algebra method to solve the equations above
 
 `@sample_code`
 ```{undefined}
+import numpy as np
+
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(___, ___)
@@ -201,6 +203,8 @@ print("Solution:\n",C)
 ```
 `@solution`
 ```{undefined}
+import numpy as np
+
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(A, B)
