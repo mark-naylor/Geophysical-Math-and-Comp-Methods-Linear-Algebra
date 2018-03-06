@@ -120,10 +120,9 @@ $ 5y + 2x = 1$
 
 
 `@sample_code`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline 
 
 x = np.linspace(-10,10)
 y1 = ...
@@ -134,7 +133,7 @@ plt.plot(x,y2, label="$y_2 = 1-2x/5$")
 plt.xlabel("X")
 ```
 `@solution`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline 
@@ -150,7 +149,7 @@ plt.ylabel("Y")
 plt.legend()
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('y1').has_equal_value()
 Ex().check_object('y2').has_equal_value()
 success_msg('Great job!')
@@ -189,21 +188,21 @@ Use this linear algebra method to solve the equations above
 
 
 `@sample_code`
-```{}
+```{undefined}
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(___, ___)
 print("Solution:\n",C)
 ```
 `@solution`
-```{}
+```{undefined}
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(A, B)
 print("Solution:\n",C)
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('C').has_equal_value()
 success_msg('Great job!')
 ```
@@ -220,7 +219,7 @@ success_msg('Great job!')
 ```yaml
 type: NormalExercise
 
-xp: 
+xp: NaN
 
 key: ac15a94b68
 ```
@@ -239,7 +238,7 @@ If they intersect with where the two equations cross - you have done it right.
 
 
 `@sample_code`
-```{}
+```{undefined}
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(A, B)
@@ -256,7 +255,7 @@ plt.axhline(..., ls='--', c='r')
 plt.show()
 ```
 `@solution`
-```{}
+```{undefined}
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(A, B)
@@ -273,7 +272,7 @@ plt.axhline(C[1], ls='--', c='r')
 plt.show()
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('C').has_equal_value()
 success_msg('Great job!')
 ```
