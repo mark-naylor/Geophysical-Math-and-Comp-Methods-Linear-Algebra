@@ -24,12 +24,10 @@ $y = 5x-2$
 
 $ 5y + 2x = 1$
 
-`@hint`
-
 
 
 `@sample_code`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -46,7 +44,7 @@ plt.legend()
 plt.show()
 ```
 `@solution`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -63,7 +61,7 @@ plt.legend()
 plt.show()
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('y1').has_equal_value()
 Ex().check_object('y2').has_equal_value()
 success_msg('Great job!')
@@ -122,7 +120,7 @@ $ 5y + 2x = 1$
 
 
 `@sample_code`
-```{undefined}
+```{}
 import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline 
@@ -136,7 +134,7 @@ plt.plot(x,y2, label="$y_2 = 1-2x/5$")
 plt.xlabel("X")
 ```
 `@solution`
-```{undefined}
+```{}
 import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline 
@@ -152,7 +150,7 @@ plt.ylabel("Y")
 plt.legend()
 ```
 `@sct`
-```{undefined}
+```{}
 Ex().check_object('y1').has_equal_value()
 Ex().check_object('y2').has_equal_value()
 success_msg('Great job!')
@@ -191,24 +189,58 @@ Use this linear algebra method to solve the equations above
 
 
 `@sample_code`
-```{undefined}
+```{}
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(___, ___)
 print("Solution:\n",C)
 ```
 `@solution`
-```{undefined}
+```{}
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(A, B)
 print("Solution:\n",C)
 ```
 `@sct`
-```{undefined}
+```{}
 Ex().check_object('C').has_equal_value()
 success_msg('Great job!')
 ```
+
+
+
+
+
+
+***
+
+
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: ac15a94b68
+```
+
+
+
+`@instructions`
+# Graphical check that you have the correct solution
+
+Now add horizontal and vertical lines corresponding to your solution using plt.axvline() and plt.axhline().
+
+If they intersect with where the two equations cross - you have done it right.
+
+`@hint`
+
+
+
+
+
+
 
 
 
