@@ -136,7 +136,6 @@ plt.xlabel("X")
 ```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline 
 
 x = np.linspace(-10,10)
 y1 = 5*x-2
