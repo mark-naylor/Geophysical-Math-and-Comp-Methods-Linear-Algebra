@@ -105,7 +105,11 @@ print( np.linalg.eigvals(A) )
 A = np.array([[1,2],[3,2]])
 print( np.linalg.eigvals(A) )
 ```
-
+`@sct`
+```{}
+Ex().check_object('A').has_equal_value()
+success_msg('Great job!')
+```
 
 
 
