@@ -15,9 +15,6 @@ skills: 2
 key: c5511f767e
 ```
 
-$\left(\begin{array}{cc} 1 & 0\\ 0 & 1 \end{array}\right)$
-
-
 'Solving' matrices is a basic concept in linear algebra.
 
 Let's take a problem $\mathbf{Ax}=\mathbf{b}$.
@@ -55,6 +52,10 @@ $\mathbf{A^{-1}Ax}=\mathbf{x}=\mathbf{A^{-1}b}$
 
 So the solution for $\mathbf{x}$ can be found by taking the inverse of $\mathbf{A}$ and dotting it with $\mathbf{b}$.
 
+`@instructions`
+
+
+`@hint`
 
 
 
@@ -102,7 +103,7 @@ success_msg('Great job!')
 ```yaml
 type: NormalExercise
 
-xp: 
+xp: NaN
 
 key: 632f323c4b
 ```
@@ -111,18 +112,14 @@ Whilst this can be implemented simply in Python, taking the inverse of matrices 
 
 A range of methods exist for solving these types of problem - the most standard approach is to use `x = np.linalg.solve(A, b)`. This is much more efficient.
 
-`@instructions`
-
-
-`@hint`
 
 
 `@pre_exercise_code`
-```{}
+```{undefined}
 import nunmpy as np
 ```
 `@sample_code`
-```{}
+```{undefined}
 # define matrix A using Numpy arrays 
 A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]]) 
 
@@ -135,7 +132,7 @@ x = np.linalg.solve( ... , ...)
 print("Solution:\n", x )
 ```
 `@solution`
-```{}
+```{undefined}
 # define matrix A using Numpy arrays 
 A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]]) 
 
@@ -146,7 +143,7 @@ b = np.array([4, 5, 6])
 print("Solution:\n", np.linalg.solve(A, b ) )
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('x').has_equal_value()
 success_msg('Great job!')
 ```
