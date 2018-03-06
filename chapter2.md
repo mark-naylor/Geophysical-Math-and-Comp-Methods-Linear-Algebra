@@ -174,7 +174,13 @@ key: 0e46483072
 
 
 `@instructions`
+You should see that these two lines intersect near 0.
 
+Now, look at this page: http://dwightreid.com/blog/2015/09/21/python-how-to-solve-simultaneous-equations/
+
+which I found by googling "python solution to simultaneous equations".
+
+Use this linear algebra method to solve the equations above
 
 `@hint`
 
@@ -194,7 +200,11 @@ B = np.array([-2,1])
 C = np.linalg.solve(A, B)
 print("Solution:\n",C)
 ```
-
+`@sct`
+```{}
+Ex().check_object('C').has_equal_value()
+success_msg('Great job!')
+```
 
 
 
