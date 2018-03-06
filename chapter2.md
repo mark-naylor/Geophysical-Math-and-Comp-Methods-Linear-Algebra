@@ -327,7 +327,27 @@ key: be19e96b1c
 
 
 `@instructions`
+In the Measurement Theory course you will have seen that one way in which acceleration (and thus gravity) can be measured is to make measurements of the time and distance of a falling mass. 
+  
+  The height of the mass as a function of time, initial position, initial velocity and acceleration due to gravity is given by:
+  $$z(t)=z_0+v_0 t+\frac{1}{2} g t^2$$
+  
+Let's assume that we do not know the initial height ($z_0$), the initial velocity ($v_0$) and
+the acceleration due to gravity ($g$). 
+  
+However, we have measurements of the position ($z(t)$) at 3 different times. 
 
+  Time, $t$ | Position, $z(t)$
+ -----|----------
+  0.1 | 0.25 
+  0.2 | 0.5
+  0.3 | 0.85
+
+- Insert these values into the equation above to create a set of 3 simultaneous equations.
+
+- From these simultaneous equations, set up the matrix problem as you did in the previous section where you are solving for $\mathbf{x} = (z_0, v_0, g)$
+  
+- Now solve for $z_0$, $v_0$ and $g$ in exactly the same way you did in the previous section.
 
 `@hint`
 We have 3 equations:
