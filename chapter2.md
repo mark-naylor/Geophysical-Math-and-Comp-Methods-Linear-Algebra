@@ -24,13 +24,14 @@ $y = 5x-2$
 
 $ 5y + 2x = 1$
 
+`@hint`
+
 
 
 `@sample_code`
-```{undefined}
+```{}
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline 
 
 x = np.linspace(-10,10)
 y1 = ...
@@ -41,12 +42,13 @@ plt.plot(x,y2, label="$y_2 = 1-2x/5$")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend()
+
+plt.show()
 ```
 `@solution`
-```{undefined}
+```{}
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline 
 
 x = np.linspace(-10,10)
 y1 = 5*x-2
@@ -57,9 +59,11 @@ plt.plot(x,y2, label="y2 = 1-2x/5")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend()
+
+plt.show()
 ```
 `@sct`
-```{undefined}
+```{}
 Ex().check_object('y1').has_equal_value()
 Ex().check_object('y2').has_equal_value()
 success_msg('Great job!')
@@ -75,12 +79,12 @@ success_msg('Great job!')
 ```yaml
 type: TabExercise
 
-xp: 
+xp: NaN
 
 key: a32c80fcb2
 ```
 
-To 
+To
 
 
 
@@ -99,7 +103,7 @@ To
 ```yaml
 type: NormalExercise
 
-xp: 
+xp: NaN
 
 key: a50d12ec7d
 ```
@@ -118,7 +122,7 @@ $ 5y + 2x = 1$
 
 
 `@sample_code`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline 
@@ -132,7 +136,7 @@ plt.plot(x,y2, label="$y_2 = 1-2x/5$")
 plt.xlabel("X")
 ```
 `@solution`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 %matplotlib inline 
@@ -148,7 +152,7 @@ plt.ylabel("Y")
 plt.legend()
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('y1').has_equal_value()
 Ex().check_object('y2').has_equal_value()
 success_msg('Great job!')
@@ -166,7 +170,7 @@ success_msg('Great job!')
 ```yaml
 type: NormalExercise
 
-xp: 
+xp: NaN
 
 key: 0e46483072
 ```
@@ -187,21 +191,21 @@ Use this linear algebra method to solve the equations above
 
 
 `@sample_code`
-```{}
+```{undefined}
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(___, ___)
 print("Solution:\n",C)
 ```
 `@solution`
-```{}
+```{undefined}
 A = np.array([[-5,1], [2,5]])
 B = np.array([-2,1])
 C = np.linalg.solve(A, B)
 print("Solution:\n",C)
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('C').has_equal_value()
 success_msg('Great job!')
 ```
