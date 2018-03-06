@@ -82,7 +82,11 @@ xp: NaN
 key: a32c80fcb2
 ```
 
-To
+In this exercise we will explore how to visualise and solve two simultaneous equations using numpy.
+
+In the next section, we will go on to explore what it means for two simultaneous equations to have no solution and finally generalise this approach to more than two equations.
+
+``numpy`` has been imported as ``np`` and ``matplotlib.pyplot`` as ``plt``
 
 
 
