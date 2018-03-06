@@ -242,60 +242,12 @@ success_msg('Great job!')
 
 
 ---
-## Simultaneous equations with no solution
-
-```yaml
-type: TabExercise
-
-xp: NaN
-
-key: 93cf3c5ae0
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-## More than two simultaneous equations
-
-```yaml
-type: TabExercise
-
-xp: NaN
-
-key: e71726be53
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
 ## Geophysical Examples
 
 ```yaml
 type: TabExercise
 
-xp: 
+xp: NaN
 
 key: e9645e0fd0
 ```
@@ -319,7 +271,7 @@ key: e9645e0fd0
 ```yaml
 type: NormalExercise
 
-xp: 
+xp: NaN
 
 key: be19e96b1c
 ```
@@ -330,9 +282,10 @@ key: be19e96b1c
 In the Measurement Theory course you will have seen that one way in which acceleration (and thus gravity) can be measured is to make measurements of the time and distance of a falling mass. 
   
   The height of the mass as a function of time, initial position, initial velocity and acceleration due to gravity is given by:
-  $$z(t)=z_0+v_0 t+\frac{1}{2} g t^2$$
+
+  $ z(t) = z_{0} + v _{0} t + \frac{1}{2} g t^2 $
   
-Let's assume that we do not know the initial height ($z_0$), the initial velocity ($v_0$) and
+Let's assume that we do not know the initial height ( $z_0$ ), the initial velocity ( $v_0$ ) and
 the acceleration due to gravity ($g$). 
   
 However, we have measurements of the position ($z(t)$) at 3 different times. 
@@ -374,7 +327,7 @@ $\mathbf{A}= \left[
 
 
 `@sample_code`
-```{}
+```{undefined}
 import numpy as np
 
 A = np.array([[1,0.1,0.005], [1,0.2,0.020], [1, 0.3, 0.045]])
@@ -386,7 +339,7 @@ print( "Initial velocity = ", x[1] )
 print( "g = ", x[2] )
 ```
 `@solution`
-```{}
+```{undefined}
 import numpy as np
 
 A = np.array([[1,0.1,0.005], [1,0.2,0.020], [1, 0.3, 0.045]])
