@@ -1,7 +1,7 @@
 ---
 title: Solving Matrix Equations
 description: >-
-  Test
+  In this Chapter you will learn how to solve matrix problems of the form $Ax=y$
 
 
 ---
@@ -21,13 +21,13 @@ Let's take a problem $\mathbf{Ax}=\mathbf{b}$.
 
 where the variables are:
 
-$\mathbf{A} = \left[
+$\mathbf{A} = \leftbrace
 \begin{array}{ccc}
     2& 1 & 1\\
     1 & 3 & 0\\
     1 & 0 & 0
 \end{array}
-\right]$ , 
+\rightbrace$ , 
 $\mathbf{x} = \left[
 \begin{array}{ccc}
     a\\
@@ -52,6 +52,10 @@ $\mathbf{A^{-1}Ax}=\mathbf{x}=\mathbf{A^{-1}b}$
 
 So the solution for $\mathbf{x}$ can be found by taking the inverse of $\mathbf{A}$ and dotting it with $\mathbf{b}$.
 
+`@instructions`
+
+
+`@hint`
 
 
 
@@ -65,7 +69,7 @@ A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]])
 #define matrix b 
 b = np.array([4, 5, 6]) 
 
-x = np.linalg.inv(...).dot(...)
+x = np.linalg.inv( ___ ).dot( ___ )
 
 print("Solution:\n", x)
 ```

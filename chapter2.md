@@ -1,7 +1,7 @@
 ---
 title: Solving Simultaneous Equation
 description: >-
-  Insert the chapter description here
+  In this chapter you will explore how to solve sets of simultaneous equations by solving matrices
 
 
 ---
