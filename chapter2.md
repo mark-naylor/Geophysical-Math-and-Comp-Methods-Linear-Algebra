@@ -131,6 +131,10 @@ y2 = ...
 plt.plot(x,y1, label="$y_1 = 5x-2$")
 plt.plot(x,y2, label="$y_2 = 1-2x/5$")
 plt.xlabel("X")
+plt.ylabel("Y")
+plt.legend()
+
+plt.show()
 ```
 `@solution`
 ```{undefined}
@@ -146,6 +150,8 @@ plt.plot(x,y2, label="y2 = 1-2x/5")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend()
+
+plt.show()
 ```
 `@sct`
 ```{undefined}
