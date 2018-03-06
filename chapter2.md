@@ -240,7 +240,27 @@ If they intersect with where the two equations cross - you have done it right.
 
 `@sample_code`
 ```{}
+A = np.array([[-5,1], [2,5]])
+B = np.array([-2,1])
+C = np.linalg.solve(A, B)
+print("Solution:\n",C)
 
+plt.plot(x,y1, label="y1 = 5x-2")
+plt.plot(x,y2, label="y2 = 1-2x/5")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.legend()
+plt.axvline(..., ls='--', c='r')
+plt.axhline(..., ls='--', c='r')
+
+plt.show()
+```
+`@solution`
+```{}
+A = np.array([[-5,1], [2,5]])
+B = np.array([-2,1])
+C = np.linalg.solve(A, B)
+print("Solution:\n",C)
 
 plt.plot(x,y1, label="y1 = 5x-2")
 plt.plot(x,y2, label="y2 = 1-2x/5")
@@ -248,9 +268,9 @@ plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend()
 plt.axvline(C[0], ls='--', c='r')
-plt.axhline(C[1], ls='--', c='r')
-```
 
+plt.show()
+```
 
 
 
