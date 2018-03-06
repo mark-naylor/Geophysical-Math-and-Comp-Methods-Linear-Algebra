@@ -1,4 +1,4 @@
-# **Course Title**<br/>by **Course Author**
+# **Course Title**<br/>by **Mark Naylor**
 
 Specs deadline: YYYY-MM-DD
 
