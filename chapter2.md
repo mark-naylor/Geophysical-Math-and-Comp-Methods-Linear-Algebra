@@ -268,10 +268,15 @@ plt.xlabel("X")
 plt.ylabel("Y")
 plt.legend()
 plt.axvline(C[0], ls='--', c='r')
+plt.axhline(C[1], ls='--', c='r')
 
 plt.show()
 ```
-
+`@sct`
+```{}
+Ex().check_object('C').has_equal_value()
+success_msg('Great job!')
+```
 
 
 
