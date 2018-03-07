@@ -399,7 +399,7 @@ key: 8d994fdb1b
 
 
 `@instructions`
-Plot the lines $x+y=1$ and  $ x+y=2$ over the range $x \in [-100,100]$ and consider why these simultaneous equations have no solution.
+Plot the lines $x+y=1$ and  $ x+y=2$ over the range $x \in [-10,10]$ and consider why these simultaneous equations have no solution.
 
 `@hint`
 
