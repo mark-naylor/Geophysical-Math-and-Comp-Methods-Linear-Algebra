@@ -1,4 +1,4 @@
-title: Math and Compu Methods for Geophsyics - Linear Algebra 
+title: Computational Methods for Geophsyics - Linear Algebra 
 description: In this course you will explore some examples of linear algrbra in Python. These tools form the basis of solving Differential Equations later in this course and Inverse Theory course you will be taking later in your degree program.
 programming_language: python
 from: python-base-prod:21
