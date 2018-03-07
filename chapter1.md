@@ -21,13 +21,13 @@ Let's take a problem $\mathbf{Ax}=\mathbf{b}$.
 
 where the variables are:
 
-$\mathbf{A} = \left(
+$\mathbf{A} = \left[
 \begin{array}{ccc}
     2& 1 & 1\\
     1 & 3 & 0\\
     1 & 0 & 0
 \end{array}
-\right)$ , 
+\right]$ , 
 $\mathbf{x} = \left[
 \begin{array}{ccc}
     a\\
