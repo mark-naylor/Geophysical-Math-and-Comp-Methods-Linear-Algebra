@@ -238,6 +238,100 @@ success_msg('Great job!')
 
 
 
+---
+## Simultaneous equations with no solution
+
+```yaml
+type: TabExercise
+
+xp: NaN
+
+key: e9cb524f11
+```
+
+An important concept for understanding how to solve simultaneous equations is to be able to diagnose when and why equations do not have a solution.
+
+
+
+`@pre_exercise_code`
+```{}
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+
+
+
+
+
+
+***
+
+
+
+```yaml
+type: NormalExercise
+
+xp: NaN
+
+key: 8d994fdb1b
+```
+
+
+
+`@instructions`
+Plot the lines $x+y=1$ and  $ x+y=2$ over the range $x \in [-10,10]$ and consider why these simultaneous equations have no solution.
+
+`@hint`
+
+
+
+`@sample_code`
+```{}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(___,___)
+plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
+
+plt.show()
+```
+`@solution`
+```{}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-2,2)
+plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
+
+plt.show()
+```
+
+
+
+
+
+
+
+***
+
+
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: 2026bafd3d
+```
+
+
+
+`@instructions`
+What happens is you naively try to solve this with ``linalg.solve``?
+
+`@hint`
+
 
 
 
@@ -356,100 +450,6 @@ print( "g = ", x[2] )
 
 
 
-
----
-## Simultaneous equations with no solution
-
-```yaml
-type: TabExercise
-
-xp: NaN
-
-key: e9cb524f11
-```
-
-An important concept for understanding how to solve simultaneous equations is to be able to diagnose when and why equations do not have a solution.
-
-
-
-`@pre_exercise_code`
-```{}
-import numpy as np
-import matplotlib.pyplot as plt
-```
-
-
-
-
-
-
-
-***
-
-
-
-```yaml
-type: NormalExercise
-
-xp: NaN
-
-key: 8d994fdb1b
-```
-
-
-
-`@instructions`
-Plot the lines $x+y=1$ and  $ x+y=2$ over the range $x \in [-10,10]$ and consider why these simultaneous equations have no solution.
-
-`@hint`
-
-
-
-`@sample_code`
-```{}
-import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.linspace(___,___)
-plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
-
-plt.show()
-```
-`@solution`
-```{}
-import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.linspace(-2,2)
-plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
-
-plt.show()
-```
-
-
-
-
-
-
-
-***
-
-
-
-```yaml
-type: NormalExercise
-
-xp: 
-
-key: 2026bafd3d
-```
-
-
-
-`@instructions`
-What happens is you naively try to solve this with ``linalg.solve``?
-
-`@hint`
 
 
 
