@@ -238,6 +238,9 @@ success_msg('Great job!')
 
 
 
+
+
+
 ---
 ## Simultaneous equations with no solution
 
@@ -254,7 +257,7 @@ An important concept for understanding how to solve simultaneous equations is to
 
 
 `@pre_exercise_code`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 ```
@@ -287,7 +290,7 @@ Plot the lines $x+y=1$ and  $ x+y=2$ over the range $x \in [-10,10]$ and conside
 
 
 `@sample_code`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -297,7 +300,7 @@ plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
 plt.show()
 ```
 `@solution`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -320,7 +323,7 @@ plt.show()
 ```yaml
 type: NormalExercise
 
-xp: 
+xp: NaN
 
 key: 2026bafd3d
 ```
@@ -331,6 +334,14 @@ key: 2026bafd3d
 What happens is you naively try to solve this with ``linalg.solve``?
 
 `@hint`
+
+
+
+
+
+
+
+
 
 
 
@@ -379,7 +390,7 @@ In the Measurement Theory course you will have seen that one way in which accele
 
   $ z(t) = z_{0} + v _{0} t + \frac{1}{2} g t^2 $
   
-Let's assume that we do not know the initial height ( $z_0$ ), the initial velocity ( $v_0$ ) and
+Let's assume that we do not know the initial height (  $ z_{0} $ ) , the initial velocity ( $ v_{0} $ ) and
 the acceleration due to gravity ($g$). 
   
 However, we have measurements of the position ($z(t)$) at 3 different times. 
@@ -444,17 +455,6 @@ print( "Initial height = ", x[0] )
 print( "Initial velocity = ", x[1] )
 print( "g = ", x[2] )
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 
 
