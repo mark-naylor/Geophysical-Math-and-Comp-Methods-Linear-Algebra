@@ -113,7 +113,7 @@ Whilst this can be implemented simply in Python, taking the inverse of matrices 
 A range of methods exist for solving these types of problem - the most standard approach is to use `x = np.linalg.solve(A, b)`. This is much more efficient.
 
 `@instructions`
-
+Solve the matrix equation $\mathbf{Ax}=\mathbf{b}$ for $\mathbf{x}$ using `lining.solve()`
 
 `@hint`
 You can look up the help page by typing `?np.linalg.solve()` in the iPython shell
