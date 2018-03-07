@@ -356,3 +356,68 @@ print( "g = ", x[2] )
 
 
 
+
+---
+## Simultaneous equations with no solution
+
+```yaml
+type: TabExercise
+
+xp: 
+
+key: e9cb524f11
+```
+
+An important concept for understanding how to solve simultaneous equations is to be able to diagnose when and why equations do not have a solution.
+
+
+
+
+
+
+
+
+
+
+
+***
+
+
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: 8d994fdb1b
+```
+
+
+
+`@instructions`
+Plot the lines $x+y=1$ and  $ x+y=2$ over the range $x \in [-100,100]$ and consider why these simultaneous equations have no solution.
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{}
+import numpy as np
+import matplotlib.pyplot as plt
+```
+`@sample_code`
+```{}
+x = np.linspace(___,___)
+plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
+```
+`@solution`
+```{}
+x = np.linspace(-2,2)
+plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
+```
+
+
+
+
+
+
