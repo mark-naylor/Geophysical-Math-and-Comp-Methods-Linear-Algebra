@@ -42,7 +42,7 @@ import matplotlib.pyplot as plt
 ```yaml
 type: NormalExercise
 
-xp: NaN
+xp: 100
 
 key: a50d12ec7d
 ```
@@ -113,7 +113,7 @@ success_msg('Great job!')
 ```yaml
 type: NormalExercise
 
-xp: NaN
+xp: 100
 
 key: 0e46483072
 ```
@@ -169,7 +169,7 @@ success_msg('Great job!')
 ```yaml
 type: NormalExercise
 
-xp: NaN
+xp: 100
 
 key: ac15a94b68
 ```
@@ -403,7 +403,7 @@ However, we have measurements of the position ($z(t)$) at 3 different times.
 
 - Insert these values into the equation above to create a set of 3 simultaneous equations.
 
-- From these simultaneous equations, set up the matrix problem as you did in the previous section where you are solving for $\mathbf{x} = (z_0, v_0, g)$
+- From these simultaneous equations, set up the matrix problem as you did in the previous section where you are solving for $ \mathbf{x} = ( z_{0}, v_{0}, g)$
   
 - Now solve for $z_0$, $v_0$ and $g$ in exactly the same way you did in the previous section.
 

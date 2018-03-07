@@ -103,7 +103,7 @@ success_msg('Great job!')
 ```yaml
 type: NormalExercise
 
-xp: NaN
+xp: 100
 
 key: 632f323c4b
 ```
