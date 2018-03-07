@@ -431,3 +431,33 @@ plt.show()
 
 
 
+
+***
+
+
+
+```yaml
+type: NormalExercise
+
+xp: 
+
+key: 2026bafd3d
+```
+
+
+
+`@instructions`
+What happens is you naively try to solve this with ``linalg.solve``?
+
+`@hint`
+
+
+
+
+
+
+
+
+
+
+
