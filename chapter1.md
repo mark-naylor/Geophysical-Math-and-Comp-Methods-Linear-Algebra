@@ -21,13 +21,13 @@ Let's take a problem $\mathbf{Ax}=\mathbf{b}$.
 
 where the variables are:
 
-$\mathbf{A} = \leftbrace
+$\mathbf{A} = \left(
 \begin{array}{ccc}
     2& 1 & 1\\
     1 & 3 & 0\\
     1 & 0 & 0
 \end{array}
-\rightbrace$ , 
+\right)$ , 
 $\mathbf{x} = \left[
 \begin{array}{ccc}
     a\\
@@ -112,18 +112,14 @@ Whilst this can be implemented simply in Python, taking the inverse of matrices 
 
 A range of methods exist for solving these types of problem - the most standard approach is to use `x = np.linalg.solve(A, b)`. This is much more efficient.
 
-`@instructions`
-
-
-`@hint`
 
 
 `@pre_exercise_code`
-```{}
+```{undefined}
 import numpy as np
 ```
 `@sample_code`
-```{}
+```{undefined}
 # define matrix A using Numpy arrays 
 A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]]) 
 
@@ -136,7 +132,7 @@ x = np.linalg.solve( ___ , ___ )
 print("Solution:\n", x )
 ```
 `@solution`
-```{}
+```{undefined}
 # define matrix A using Numpy arrays 
 A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]]) 
 
@@ -147,7 +143,7 @@ b = np.array([4, 5, 6])
 print("Solution:\n", np.linalg.solve(A, b ) )
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('x').has_equal_value()
 success_msg('Great job!')
 ```
