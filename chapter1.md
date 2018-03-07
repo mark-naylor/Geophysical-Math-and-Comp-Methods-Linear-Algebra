@@ -56,7 +56,7 @@ So the solution for $\mathbf{x}$ can be found by taking the inverse of $\mathbf{
 
 
 `@hint`
-
+You can look up the help page by typing `?np.linalg.solve()` in the iPython shell
 
 
 `@sample_code`
