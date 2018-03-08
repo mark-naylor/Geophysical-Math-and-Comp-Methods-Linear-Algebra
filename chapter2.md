@@ -50,11 +50,9 @@ key: a50d12ec7d
 
 
 `@instructions`
-Plot a graph of the two lines below including the region where they intersect.
+Let's start by looking at what happens if we use the equality operator ``==`` to compare two matrices.
 
-$y = 5x-2$
-
-$ 5y + 2x = 1$
+Create two matrices...
 
 `@hint`
 
@@ -63,41 +61,25 @@ $ 5y + 2x = 1$
 `@sample_code`
 ```{undefined}
 import numpy as np
-import matplotlib.pyplot as plt
 
-x = np.linspace(-10,10)
-y1 = ...
-y2 = ...
+a = np.array( [[1,2],[3,4]] )
+b = np.array( [[1,3],[2,4]] )
 
-plt.plot(x,y1, label="$y_1 = 5x-2$")
-plt.plot(x,y2, label="$y_2 = 1-2x/5$")
-plt.xlabel("X")
-plt.ylabel("Y")
-plt.legend()
-
-plt.show()
+print( a==b )
 ```
 `@solution`
 ```{undefined}
 import numpy as np
-import matplotlib.pyplot as plt
 
-x = np.linspace(-10,10)
-y1 = 5*x-2
-y2 = 1./5-2*x/5
+a = np.array( [[1,2],[3,4]] )
+b = np.array( [[1,3],[2,4]] )
 
-plt.plot(x,y1, label="y1 = 5x-2")
-plt.plot(x,y2, label="y2 = 1-2x/5")
-plt.xlabel("X")
-plt.ylabel("Y")
-plt.legend()
-
-plt.show()
+print( a==b )
 ```
 `@sct`
 ```{undefined}
-Ex().check_object('y1').has_equal_value()
-Ex().check_object('y2').has_equal_value()
+Ex().check_object('a').has_equal_value()
+Ex().check_object('b').has_equal_value()
 success_msg('Great job!')
 ```
 
@@ -257,7 +239,7 @@ An important concept for understanding how to solve simultaneous equations is to
 
 
 `@pre_exercise_code`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 ```
@@ -290,7 +272,7 @@ Plot the lines $x+y=1$ and  $ x+y=2$ over the range $x \in [-10,10]$ and conside
 
 
 `@sample_code`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -300,7 +282,7 @@ plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
 plt.show()
 ```
 `@solution`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -309,13 +291,13 @@ plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
 
 plt.show()
 ```
-
-
 `@sct`
 ```{undefined}
 Ex().check_object('x').has_equal_value()
 success_msg('Great job!')
 ```
+
+
 
 
 
@@ -327,7 +309,7 @@ success_msg('Great job!')
 ```yaml
 type: NormalExercise
 
-xp: 
+xp: NaN
 
 key: 706f2fe98c
 ```
@@ -340,12 +322,9 @@ key: 706f2fe98c
 `@hint`
 
 
-`@pre_exercise_code`
-
-
 
 `@sample_code`
-```{}
+```{undefined}
 A = np.array([[___,___],[___,___]]) 
 b = np.array([[___],[___]])
 
@@ -353,9 +332,8 @@ x = np.linalg.solve(A,b)
 
 print("Solution:\n",x )
 ```
-
 `@solution`
-```{}
+```{undefined}
 A = np.array([[1,1],[1,1]]) 
 b = np.array([[1],[2]])
 
@@ -363,13 +341,13 @@ x = np.linalg.solve(A,b)
 
 print("Solution:\n",x )
 ```
-
-
 `@sct`
 ```{undefined}
 Ex().check_object('x').has_equal_value()
 success_msg('Great job!')
 ```
+
+
 
 
 
