@@ -103,8 +103,6 @@ key: 9c7dc76122
 
 Is the use of the operator ``==`` on two matrices the same as the mathematical definition of matrix equality?
 
-`@instructions`
-
 
 `@hint`
 
@@ -116,13 +114,12 @@ Is the use of the operator ``==`` on two matrices the same as the mathematical d
 `@possible_answers`
 - True
 
-- False
+- [False]
 
 `@feedbacks`
-msg1 = "Incorrect"
-msg2 = "Correct"
+- Incorrect
 
-test_mc(2, [msg1, msg2])
+- Correct
 
 
 
