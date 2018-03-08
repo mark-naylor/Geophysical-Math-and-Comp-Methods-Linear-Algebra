@@ -170,7 +170,6 @@ xp: 100
 ```yaml
 type: NormalExercise
 xp: 100
-key: 8fbd06e0f7
 ```
 
 `@instructions`
@@ -219,7 +218,6 @@ print(b)
 ```yaml
 type: NormalExercise
 xp: 100
-key: 9c766c9f0e
 ```
 
 `@instructions`
@@ -447,8 +445,10 @@ A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]])
 #define matrix b 
 b = np.array([4, 5, 6]) 
 
+x = np.linalg.solve( A , b )
+
 # linalg.solve is the function of NumPy to solve a system of linear scalar equations 
-print("Solution:\n", np.linalg.solve(A, b ) )
+print("Solution:\n", x )
 ```
 `@sct`
 ```{undefined}
