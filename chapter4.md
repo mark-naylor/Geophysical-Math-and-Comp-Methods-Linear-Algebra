@@ -18,6 +18,23 @@ xp: NaN
 key: 5bcf5ade9a
 ```
 
+In these exercises we will explore the concept of matrix equality and how it is implemented in Python.
+
+
+
+`@pre_exercise_code`
+```{undefined}
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+
+
+
+
+
+
+***
 
 
 
