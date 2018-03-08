@@ -310,8 +310,12 @@ plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
 plt.show()
 ```
 
-
-
+```
+`@sct`
+```{undefined}
+Ex().check_object('x').has_equal_value()
+success_msg('Great job!')
+```
 
 
 
