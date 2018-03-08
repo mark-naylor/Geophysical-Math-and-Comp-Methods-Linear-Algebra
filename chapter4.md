@@ -4,178 +4,6 @@ description: >-
   undefined
 
 
----
-## Dot Products
-
-```yaml
-type: BulletExercise
-
-xp: NaN
-
-key: bb8dcc28c9
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-## Inverse of a Matrix
-
-```yaml
-type: BulletExercise
-
-xp: NaN
-
-key: 18765027c6
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-## Determinant of a Matrix
-
-```yaml
-type: BulletExercise
-
-xp: NaN
-
-key: 2fdab5a782
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-## Solving Matrix Problems of the form Ax=b
-
-```yaml
-type: TabExercise
-
-xp: NaN
-
-key: 189d746cbd
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-## Transpose of a Matrix
-
-```yaml
-type: BulletExercise
-
-xp: NaN
-
-key: 9ec68e0f28
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
-
-
-```yaml
-type: NormalExercise
-
-xp: 
-
-key: 17659e511c
-```
-
-
-
-`@instructions`
-
-
-`@hint`
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
-
-
-```yaml
-type: PureMultipleChoiceExercise
-
-xp: undefined
-
-key: 2050acb8aa
-```
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -190,6 +18,55 @@ xp: NaN
 key: 5bcf5ade9a
 ```
 
+
+
+
+
+```yaml
+type: NormalExercise
+
+xp: 100
+
+key: a50d12ec7d
+```
+
+
+`@instructions`
+Let's start by looking at what happens if we use the equality operator ``==`` to compare two matrices.
+
+Create two matrices...
+
+
+`@hint`
+
+
+
+`@sample_code`
+```{undefined}
+import numpy as np
+
+a = np.array( [[1,2],[3,4]] )
+b = np.array( [[1,3],[2,4]] )
+
+print( a==b )
+
+```
+`@solution`
+```{undefined}
+import numpy as np
+
+a = np.array( [[1,2],[3,4]] )
+b = np.array( [[1,3],[2,4]] )
+
+print( a==b )
+```
+
+`@sct`
+```{undefined}
+Ex().check_object('a').has_equal_value()
+Ex().check_object('b').has_equal_value()
+success_msg('Great job!')
+```
 
 
 
