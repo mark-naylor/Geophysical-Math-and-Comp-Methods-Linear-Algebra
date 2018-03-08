@@ -52,6 +52,8 @@ Let's start by looking at what happens if we use the equality operator ``==`` to
 
 Create two matrices...
 
+Is this the same as the mathematical definition of matrix equality?
+
 `@hint`
 
 
@@ -78,7 +80,7 @@ print( a==b )
 ```{}
 Ex().check_object('a').has_equal_value()
 Ex().check_object('b').has_equal_value()
-success_msg('Great job!')
+success_msg('Great job! Note that this is not the same as the mathematical definition of matrix equality. Re-read the defintion above to see why.')
 ```
 
 
@@ -132,10 +134,128 @@ print( is_Equal )
 `@sct`
 ```{}
 Ex().check_object('is_Equal').has_equal_value()
-success_msg('Great job!')
+success_msg('Great job! This is the same as the mathematical definition matrix equality.')
 ```
 
 
 
 
 
+
+---
+## Transpose of a Matrix
+
+```yaml
+type: TabExercise
+key: 256c8afbac
+lang: python
+xp: 100
+```
+
+
+`@pre_exercise_code`
+```{python}
+
+```
+
+`@sample_code`
+```{python}
+
+```
+
+***
+
+### Sub Heading
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+
+Use the transpose method on $a$
+
+`@sample_code`
+```{}
+## Load numpy on first use
+import numpy as np
+
+## Define an array A
+a = np.array([[1, 2], [3, 4]])
+print(a)
+
+b = ___.___()
+print(b)
+```
+
+
+`@solution`
+```{python}
+## Load numpy on first use
+import numpy as np
+
+## Define an array A
+a = np.array([[1, 2], [3, 4]])
+print(a)
+
+b = a.transpose()
+print(b)
+
+```
+
+`@hint`
+
+`@sct`
+```{python}
+
+```
+
+***
+
+### Sub Heading 2
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+Alternatively, you can use the 
+
+
+
+
+`@sample_code`
+```{}
+## Load numpy on first use
+import numpy as np
+
+## Define an array A
+a = np.array([[1, 2], [3, 4]])
+print(a)
+
+b = ___.___()
+print(b)
+```
+
+
+`@solution`
+```{python}
+## Load numpy on first use
+import numpy as np
+
+## Define an array A
+a = np.array([[1, 2], [3, 4]])
+print(a)
+
+b = a.T
+print(b)
+```
+
+`@hint`
+
+`@sct`
+```{python}
+
+```
