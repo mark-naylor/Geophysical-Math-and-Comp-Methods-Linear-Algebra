@@ -26,7 +26,7 @@ Two matrices are equal if all three of the following conditions are met:
 
 
 `@pre_exercise_code`
-```{}
+```{undefined}
 import numpy as np
 import matplotlib.pyplot as plt
 ```
@@ -61,7 +61,7 @@ Create two matrices...
 
 
 `@sample_code`
-```{}
+```{undefined}
 import numpy as np
 
 a = np.array( [[1,2],[3,4]] )
@@ -70,7 +70,7 @@ b = np.array( [[1,3],[2,4]] )
 print( a==b )
 ```
 `@solution`
-```{}
+```{undefined}
 import numpy as np
 
 a = np.array( [[1,2],[3,4]] )
@@ -79,7 +79,7 @@ b = np.array( [[1,3],[2,4]] )
 print( a==b )
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('a').has_equal_value()
 Ex().check_object('b').has_equal_value()
 success_msg('Great job!')
@@ -95,22 +95,34 @@ success_msg('Great job!')
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: 9c7dc76122
+
 xp: 50
 skills: 2
+key: 9c7dc76122
 ```
 
-`@instructions`
 Is the use of the operator ``==`` on two matrices the same as the mathematical definition of matrix equality?
+
+`@instructions`
+
+
+`@hint`
+
+
+
+
 
 
 `@possible_answers`
-
 - True
 
 - False
 
-`@hint`
-
 `@feedbacks`
+msg1 = "Incorrect"
+msg2 = "Correct"
+
+test_mc(2, [msg1, msg2])
+
+
 
