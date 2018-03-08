@@ -179,10 +179,9 @@ success_msg('Great job!')
 
 ```yaml
 type: PureMultipleChoiceExercise
-
 xp: 50
 skills: 2
-key: 9c7dc76122
+key: 2284ac0e76
 ```
 
 
