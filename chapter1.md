@@ -15,6 +15,32 @@ skills: 2
 key: c5511f767e
 ```
 
+Online resources:
+
+<br>- https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/matrices-elimination/v/matrices-reduced-row-echelon-form-1
+</div>
+
+
+Consider a set of linear equations:
+
+\begin{equation*}
+    \begin{array}{cccccc}
+    a_{11}x_1+&a_{12}x_2+&\ldots&+a_{1n}x_n&=&b_1\\
+    a_{21}x_1+&a_{22}x_2+&\ldots&+a_{2n}x_n&=&b_2\\
+    &\vdots&&\vdots&=&\vdots\\
+    a_{n1}x_1+&a_{n2}x_2+&\ldots&+a_{nn}x_n&=&b_n
+    \end{array}
+  \end{equation*}
+
+Which we can write as $\mathbf{A}\mathbf{x}=\mathbf{b}$.  Then
+  $\mathbf{x}=\mathbf{A}^{-1}\mathbf{b}$.  
+  
+Problems of this type can be solved to find `x` using: `np.linalg.solve(A,b)`
+
+
+
+
+`@instructions`
 'Solving' matrices is a basic concept in linear algebra.
 
 Let's take a problem $\mathbf{Ax}=\mathbf{b}$.
@@ -51,9 +77,6 @@ The standard approach to solve this would be:
 $\mathbf{A^{-1}Ax}=\mathbf{x}=\mathbf{A^{-1}b}$
 
 So the solution for $\mathbf{x}$ can be found by taking the inverse of $\mathbf{A}$ and dotting it with $\mathbf{b}$.
-
-`@instructions`
-
 
 `@hint`
 
@@ -119,11 +142,11 @@ Solve the matrix equation $\mathbf{Ax}=\mathbf{b}$ for $\mathbf{x}$ using `linin
 You can look up the help page by typing `?np.linalg.solve()` in the iPython shell
 
 `@pre_exercise_code`
-```{}
+```{undefined}
 import numpy as np
 ```
 `@sample_code`
-```{}
+```{undefined}
 # define matrix A using Numpy arrays 
 A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]]) 
 
@@ -136,7 +159,7 @@ x = np.linalg.solve( ___ , ___ )
 print("Solution:\n", x )
 ```
 `@solution`
-```{}
+```{undefined}
 # define matrix A using Numpy arrays 
 A = np.array([[2, 1, 1], [1, 3, 2], [1, 0, 0]]) 
 
@@ -147,7 +170,7 @@ b = np.array([4, 5, 6])
 print("Solution:\n", np.linalg.solve(A, b ) )
 ```
 `@sct`
-```{}
+```{undefined}
 Ex().check_object('x').has_equal_value()
 success_msg('Great job!')
 ```
