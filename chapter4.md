@@ -83,39 +83,6 @@ success_msg('Great job!')
 
 
 
-
-
-
-***
-
-
-
-```yaml
-type: PureMultipleChoiceExercise
-
-xp: 50
-skills: 2
-key: 9c7dc76122
-```
-
-
-
-Is the ``==`` operation the same as the mathematical definition of matrix equality?
-
-
-
-`@possible_answers`
-- True
-- [False]
-
-`@feedbacks`
-- Incorrect
-- Correct
-
-
-
-
-
 ***
 
 
@@ -168,37 +135,6 @@ Ex().check_object('is_Equal').has_equal_value()
 success_msg('Great job!')
 ```
 
-
-
-
-
-
-***
-
-
-
-```yaml
-type: PureMultipleChoiceExercise
-xp: 50
-skills: 2
-key: 2284ac0e76
-```
-
-
-
-
-
-
-
-
-
-`@possible_answers`
-- [True]
-- False
-
-`@feedbacks`
-- Incorrect
-- Correct
 
 
 
