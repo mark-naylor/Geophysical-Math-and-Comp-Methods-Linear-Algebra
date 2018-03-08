@@ -25,9 +25,7 @@ Two matrices are equal if all three of the following conditions are met:
 
 
 
-`@pre_exercise_code`
-```{undefined}
-```
+
 
 
 
@@ -59,7 +57,7 @@ Create two matrices...
 
 
 `@sample_code`
-```{undefined}
+```{}
 import numpy as np
 
 a = np.array( [[1,2],[3,4]] )
@@ -67,10 +65,8 @@ b = np.array( [[1,3],[2,4]] )
 
 print( a==b )
 ```
-
-
 `@solution`
-```{undefined}
+```{}
 import numpy as np
 
 a = np.array( [[1,2],[3,4]] )
@@ -78,10 +74,8 @@ b = np.array( [[1,3],[2,4]] )
 
 print( a==b )
 ```
-
-
 `@sct`
-```{undefined}
+```{}
 Ex().check_object('a').has_equal_value()
 Ex().check_object('b').has_equal_value()
 success_msg('Great job!')
@@ -94,6 +88,8 @@ success_msg('Great job!')
 
 ***
 
+
+
 ```yaml
 type: PureMultipleChoiceExercise
 
@@ -102,11 +98,9 @@ skills: 2
 key: 9c7dc76122
 ```
 
-Is the use of the operator ``==`` on two matrices the same as the mathematical definition of matrix equality?
 
 
-
-
+Is the ``==`` operation the same as the mathematical definition of matrix equality?
 
 
 
@@ -121,12 +115,15 @@ Is the use of the operator ``==`` on two matrices the same as the mathematical d
 
 
 
+
 ***
+
+
 
 ```yaml
 type: NormalExercise
 
-xp: 
+xp: NaN
 
 key: 1553b7299f
 ```
@@ -134,7 +131,6 @@ key: 1553b7299f
 
 
 `@instructions`
-
 This example uses the ``np.isEqual()`` method to compare two matrices.
 
 - run the script and examine the output
@@ -143,8 +139,9 @@ This example uses the ``np.isEqual()`` method to compare two matrices.
 `@hint`
 
 
+
 `@sample_code`
-```{undefined}
+```{}
 import numpy as np
 
 a = np.array( [[1,2],[3,4]] )
@@ -154,9 +151,8 @@ is_Equal =  np.equal(a,b)
 
 print( is_Equal )
 ```
-
 `@solution`
-```{undefined}
+```{}
 import numpy as np
 
 a = np.array( [[1,2],[3,4]] )
@@ -165,24 +161,31 @@ b = np.array( [[1,2],[3,4]] )
 is_Equal =  np.equal(a,b)
 
 print( is_Equal )
-
 ```
 `@sct`
-```{undefined}
+```{}
 Ex().check_object('is_Equal').has_equal_value()
 success_msg('Great job!')
 ```
 
+
+
+
+
+
 ***
+
+
 
 ```yaml
 type: PureMultipleChoiceExercise
+
 xp: 50
 skills: 2
-key: a73b0abbce
+key: 9c7dc76122
 ```
 
-Is the use of the method ``np.equal()`` on two matrices the same as the mathematical definition of matrix equality?
+
 
 
 
