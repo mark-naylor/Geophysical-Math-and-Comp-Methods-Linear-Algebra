@@ -257,7 +257,7 @@ An important concept for understanding how to solve simultaneous equations is to
 
 
 `@pre_exercise_code`
-```{undefined}
+```{}
 import numpy as np
 import matplotlib.pyplot as plt
 ```
@@ -290,7 +290,7 @@ Plot the lines $x+y=1$ and  $ x+y=2$ over the range $x \in [-10,10]$ and conside
 
 
 `@sample_code`
-```{undefined}
+```{}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -300,7 +300,7 @@ plt.plot( x, 1-x, 'b', x, 2-x, 'g.')
 plt.show()
 ```
 `@solution`
-```{undefined}
+```{}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -323,21 +323,37 @@ plt.show()
 ```yaml
 type: NormalExercise
 
-xp: NaN
+xp: 
 
-key: 2026bafd3d
+key: 706f2fe98c
 ```
 
 
 
 `@instructions`
-What happens is you naively try to solve this with ``linalg.solve``?
+
 
 `@hint`
 
 
+`@pre_exercise_code`
+```{}
+A = np.array([[___,___],[___,___]]) 
+b = np.array([[___],[___]])
 
+x = np.linalg.solve(A,b)
 
+print("Solution:\n",x )
+```
+`@sample_code`
+```{}
+A = np.array([[1,1],[1,1]]) 
+b = np.array([[1],[2]])
+
+x = np.linalg.solve(A,b)
+
+print("Solution:\n",x )
+```
 
 
 
