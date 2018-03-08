@@ -170,6 +170,7 @@ xp: 100
 ```yaml
 type: NormalExercise
 xp: 100
+key: 502b8c57c3
 ```
 
 `@instructions`
@@ -218,6 +219,7 @@ print(b)
 ```yaml
 type: NormalExercise
 xp: 100
+key: 8c29300707
 ```
 
 `@instructions`
