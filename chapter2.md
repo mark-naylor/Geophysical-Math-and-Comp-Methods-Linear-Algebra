@@ -341,6 +341,10 @@ key: 706f2fe98c
 
 
 `@pre_exercise_code`
+
+
+
+`@sample_code`
 ```{}
 A = np.array([[___,___],[___,___]]) 
 b = np.array([[___],[___]])
@@ -349,7 +353,8 @@ x = np.linalg.solve(A,b)
 
 print("Solution:\n",x )
 ```
-`@sample_code`
+
+`@solution`
 ```{}
 A = np.array([[1,1],[1,1]]) 
 b = np.array([[1],[2]])
@@ -360,8 +365,11 @@ print("Solution:\n",x )
 ```
 
 
-
-
+`@sct`
+```{undefined}
+Ex().check_object('x').has_equal_value()
+success_msg('Great job!')
+```
 
 
 
