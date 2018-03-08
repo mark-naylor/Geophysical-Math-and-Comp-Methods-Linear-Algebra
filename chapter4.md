@@ -177,10 +177,9 @@ success_msg('Great job!')
 
 ```yaml
 type: PureMultipleChoiceExercise
-
 xp: 50
 skills: 2
-key: 9c7dc76122
+key: a73b0abbce
 ```
 
 Is the use of the method ``np.equal()`` on two matrices the same as the mathematical definition of matrix equality?
