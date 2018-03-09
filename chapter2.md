@@ -356,10 +356,8 @@ success_msg('Great job!')
 
 ```yaml
 type: NormalExercise
-
 xp: NaN
-
-key: 706f2fe98c
+key: e976204a92
 ```
 
 
