@@ -350,6 +350,99 @@ success_msg('Great job!')
 
 
 
+***
+
+
+
+```yaml
+type: NormalExercise
+
+xp: NaN
+
+key: 706f2fe98c
+```
+
+
+
+`@instructions`
+
+We should have a way of knowing in advance that there is no solution...
+
+- Solving a matrix is costly for large matrices
+- How can we tell if a set of simultaneous equations have a solution?
+- We need them to be all INDEPENDENT!!
+- The tool for telling this is the Rank
+
+
+### Matrix Properties: Rank
+
+<div class="alert alert-block alert-info">
+Online resource:
+<br>- https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/linear-independence/v/linear-algebra-introduction-to-linear-independence
+</div>
+
+A set of vectors $\mathbf{a_j}$ is **linearly independent**  if:
+
+$$ \sum_j  \mathbf{a_j} c_j = 0\  \mbox{   only when } c_j $$
+
+
+Let's take an example where the rows are not all independent:
+  \begin{eqnarray*}
+    \mathbf{a_1}=&(1, 0, 1, 0)\\
+    \mathbf{a_2}=&(1, 0, -1, 0)\\
+    \mathbf{a_3}=&(1, 0, 0, 0)\\
+    \mathbf{a_4}=&(0, 1, 0, 1)
+  \end{eqnarray*}
+  
+  $\mathbf{a_1}+\mathbf{a_2}-2\mathbf{a_3}=\mathbf{0}$ so these vectors are
+linear dependant. 
+
+The **Rank** of a matrix is the number of linearly independent rows of a matrix, in the case above only 3 of the 4 rows are linearly independent. 
+
+Use the numpy function `np.linalg.matrix_rank()` to compute it.
+
+`@hint`
+
+
+
+`@sample_code`
+```{undefined}
+import numpy as np
+A = np.array([[1,0,1,0],[1,0,-1,0],[1,0,0,0],[0,1,0,1]])
+
+print(A)
+
+length_A = len(A)
+rank_A = ___
+
+print("Number of independent rows = ", rank_A)
+print("Number of rows = ", length_A)
+
+```
+
+
+`@solution`
+```{undefined}
+import numpy as np
+A = np.array([[1,0,1,0],[1,0,-1,0],[1,0,0,0],[0,1,0,1]])
+
+print(A)
+
+length_A = len(A)
+rank_A = np.linalg.matrix_rank(A)
+
+print("Number of independent rows = ", rank_A)
+print("Number of rows = ", length_A)
+
+```
+`@sct`
+```{undefined}
+Ex().check_object('rank_A').has_equal_value()
+success_msg('Great job!')
+```
+
+
+
 
 
 ---

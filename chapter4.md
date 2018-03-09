@@ -5,6 +5,10 @@ description: >-
 
 
 ---
+
+
+
+
 ## Matrix Equality
 
 ```yaml
@@ -142,7 +146,76 @@ success_msg('Great job! This is the same as the mathematical definition matrix e
 
 
 
+
 ---
+## Matrix Creation
+
+```yaml
+type: BulletExercise
+key: 4e37826430
+lang: python
+xp: 100
+```
+
+
+`@pre_exercise_code`
+```{python}
+import numpy as np
+```
+
+`@sample_code`
+```{python}
+
+```
+
+***
+
+### Zeros
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+Use ``np.zeros`` to create a 4x4 matrix of zeros
+
+`@hint`
+
+`@solution`
+```{python}
+a = np.zeros((4,4))
+```
+
+`@sct`
+```{python}
+
+```
+
+***
+
+### Ones
+
+```yaml
+type: NormalExercise
+xp: 100
+```
+
+`@instructions`
+Use ``np.ones`` to create a 9x9 matrix of ones
+
+`@hint`
+
+`@solution`
+```{python}
+a = np.ones((9,9))
+```
+
+`@sct`
+```{python}
+
+```
+
 ## Transpose of a Matrix
 
 ```yaml
@@ -259,7 +332,8 @@ print(b)
 
 `@sct`
 ```{python}
-
+Ex().check_object('b').has_equal_value()
+success_msg('Great job!')
 ```
 
 
