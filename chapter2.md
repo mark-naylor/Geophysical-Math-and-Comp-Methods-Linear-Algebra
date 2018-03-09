@@ -240,8 +240,6 @@ An important concept for understanding how to solve simultaneous equations is to
 
 `@pre_exercise_code`
 ```{undefined}
-import numpy as np
-import matplotlib.pyplot as plt
 ```
 
 
@@ -356,8 +354,10 @@ success_msg('Great job!')
 
 ```yaml
 type: NormalExercise
+
 xp: NaN
-key: e976204a92
+
+key: 706f2fe98c
 ```
 
 
